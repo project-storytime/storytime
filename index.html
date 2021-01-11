@@ -34,7 +34,11 @@ if (userok == "false") {
 }
 }
 function whoami() {
+  if (user == "") {
+    return ""
+  } else {
   console.log(user)
+  }
 }
 var userok = "false"
 </script>
