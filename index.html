@@ -2,10 +2,9 @@
 <br>
 <button type="button" onclick="window.location.href = '/storytime/'">stories</button>
 <button type="button" onclick="alert('storytime is made by aragon press')">who makes storytime?</button>
-<button type="button" onclick="authuser()">sign me in</button>
+<button type="button" disabled=userok onclick="authuser()">sign me in</button>
 <head>
 <meta name="storytime" content="free stories for all">
-<meta http-equiv="refresh" content="30">
 <title>storytime</title>
 </head>
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,10 +22,17 @@
   }
 function authuser() {
 var user = prompt("username:")
-var userok = prompt(user,"yes/no")
-if (userok == "yes") {
+var userok = prompt(user,"true/false")
+if (userok == "true") {
 alert("done")
 }
+if (userok == "false") {
+  var user = ""
+  alert("username removed from client info")
+}
+}
+function whoami() {
+  console.log(user)
 }
 </script>
 
