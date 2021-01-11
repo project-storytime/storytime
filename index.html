@@ -2,6 +2,7 @@
 <br>
 <button type="button" onclick="window.location.href = '/storytime/'">stories</button>
 <button type="button" onclick="alert('storytime is made by aragon press')">who makes storytime?</button>
+<button type="button" onclick="authuser()">sign me in</button>
 <head>
 <meta name="storytime" content="free stories for all">
 <meta http-equiv="refresh" content="30">
@@ -20,5 +21,12 @@
   function redirectap() {
     setTimeout("window.location.href = 'https://aragon-press.com'",3000)
   }
+function authuser() {
+var user = prompt("username:")
+var userok = prompt(user,"yes/no")
+if (userok == "yes") {
+alert("done")
+}
+}
 </script>
 
