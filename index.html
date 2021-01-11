@@ -2,7 +2,7 @@
 <br>
 <button type="button" onclick="window.location.href = '/storytime/'">stories</button>
 <button type="button" onclick="alert('storytime is made by aragon press')">who makes storytime?</button>
-<button type="button" disabled=userok onclick="authuser()">sign me in</button>
+<button type="button" userok onclick="authuser()">sign me in</button>
 <head>
 <meta name="storytime" content="free stories for all">
 <title>storytime</title>
@@ -25,6 +25,7 @@ var user = prompt("username:")
 var userok = prompt(user,"true/false")
 if (userok == "true") {
 alert("done")
+var userok = "disabled"
 }
 if (userok == "false") {
   var user = ""
