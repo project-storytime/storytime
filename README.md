@@ -1,5 +1,5 @@
 ### projectstorytime
-> Stories. *For free*. **For all**. ***Forever***.
+> Stories. **For free**. *For all*. ***Forever***.
 
 just look at the code, it's pretty simple.
 
