@@ -1,2 +1,19 @@
 <h1>Nope</h1>
 <p>You're not allowed to do this. (403)<br>If you think you should be able to do this, <a href="http://github.com/kaiete/projectstorytime/">create an issue</a>.</p>
+<button type="button" onclick="authuser()">sign me in</button>
+<script>
+function authuser() {
+var user = prompt("username:")
+var userok = prompt(user,"true/false")
+if (userok == "true") {
+document.getElementById("signin").disabled = true
+setTimeout('alert("done")',200)
+}
+if (userok == "false") {
+  var user = ""
+  alert("username removed from client info")
+  document.getElementById("signin").disabled = false
+}
+}
+var userok = "false"
+</script>
