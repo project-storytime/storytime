@@ -37,3 +37,18 @@ var userok = "false"
 setTimeout('window.location.replace("http://afraid.org")',240000)
 </script>
 <link rel='icon' href='/favicon.ico' type='image/x-icon'/ >
+<div id="wrapper">
+		<div class="adBar">
+			&nbsp;
+		</div>
+	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			setTimeout(function() {
+				if (document.getElementById("wrapper").offsetHeight) {
+				} else {
+					alert('Please disable your ad blocker. StoryTime never, ever shows ads, but others do. Often their only source of income is through ads, and that is the only way they can keep creating their amazing free services.')
+				}
+			}, 1000)
+		});
+	</script>
