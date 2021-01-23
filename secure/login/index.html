@@ -1,6 +1,23 @@
 <div class="main">
   <h1>StoryTime login</h1>
+  <button type="button" onclick="authuser()">Sign me in!</button>
 </div>
+<script>
+function authuser() {
+var user = prompt("username:")
+var userok = prompt(user,"true/false")
+if (userok == "true") {
+document.getElementById("signin").disabled = true
+setTimeout('alert("done")',200)
+}
+if (userok == "false") {
+  var user = ""
+  alert("username removed from client info")
+  document.getElementById("signin").disabled = false
+}
+}
+var userok = "false"
+</script>
 <style>
   .main {
     font-family: sans-serif;
@@ -8,4 +25,4 @@
     align-items: center;
   }
 </style>
-    
+
