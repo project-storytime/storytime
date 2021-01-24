@@ -4,19 +4,8 @@
 </div>
 <script>
 function authuser() {
-var user = prompt("username:")
-var userok = prompt(user,"true/false")
-if (userok == "true") {
-document.getElementById("signin").disabled = true
-setTimeout('alert("done")',200)
+window.location.href = "/discord/"
 }
-if (userok == "false") {
-  var user = ""
-  alert("username removed from client info")
-  document.getElementById("signin").disabled = false
-}
-}
-var userok = "false"
 </script>
 <style>
   .main {
