@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <body>
-<%
-response.write("Your StoryTime / Discord code is: " & code)
-%>
-<p>Don't share it with anyone else.</p>
+<script>
+  const params = new URLSearchParams(window.location.search)
+  alert(params)
+  
+</script>
+  <p>This is your StoryTime login code.</p>
+<p>Don't share this code with anyone else.</p>
 </body>
 </html>
