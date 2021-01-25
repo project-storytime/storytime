@@ -5,9 +5,13 @@
   }
   var logincode = getParams()
   prompt("here is your login code. don't share it with anyone else, and keep it safe. ignore the code= bit at the beginning.", logincode)
+  function reloadpagewithparams() {
+    window.location.href = window.location
+  }
 </script>
 <body style="align-items: center; font-family: sans-serif;">
   <h1>All done and dusted!</h1>
   <p>You're signed in.</p>
+  <p>Didn't get the code? Don't worry. Just tap <button type="button" onclick="reloadpagewithparams()">here</button></p>
 </body>
     
