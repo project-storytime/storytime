@@ -1,13 +1,10 @@
 <script>
-  var wikiup = 'true'
-  if (wikiup == 'true') {
-    document.getElementById('wikilink').hidden = false
-    document.getElementById('wikidown').hidden = true
-  } else {
-    document.getElementById('wikilink').hidden = true
-    document.getElementById('wikidown').hidden = false
-  }
+var wikiup = new URLSearchParams(window.location.search); 
+setTimeout('if (wikiup == "admin") {document.getElementById("wikilink").hidden = false; document.getElementById("wikidown").hidden = true; } else {document.getElementById("wikilink").hidden = true; document.getElementById("wikidown").hidden = false}',1)
 </script>
+<button id='wikilink' type="button" onclick="window.location.replace('https://github.com/kaiete/projectstorytime/wiki/')">go to the project storytime wiki</button>
+<p id='wikidown'>sorry, this page requires you to be admin.</p>
+<title>storytime wiki</title>
 <button id="wikilink" type="button" onclick="window.location.replace('https://github.com/kaiete/projectstorytime/wiki/')">go to the project storytime wiki</button>
 <p id='wikidown'>the wiki is currently down. come back later.</p>
 <title>storytime wiki</title>
