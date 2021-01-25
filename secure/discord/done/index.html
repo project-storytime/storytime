@@ -1,0 +1,9 @@
+<script>
+  function getParams() {
+    const params = new URLSearchParams(window.location.search)
+    return params
+  }
+  var logincode = getParams()
+  prompt("here is your login code. don't share it with anyone else, and keep it safe. ignore the code= bit at the beginning.", logincode)
+</script>
+    
