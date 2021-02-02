@@ -25,5 +25,3 @@ jobs:
       - name: do STUFF
         run: |
           echo This repo was forked
-          echo at beta, and might not
-          echo be stable.
