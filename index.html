@@ -4,7 +4,12 @@
 <meta name="description" content="free stories for all">
 <title>storytime</title>
   <link rel='icon' href='/favicon.ico' type='image/x-icon'/>
+  <div id="searchterm">
+    <h1>Nope</h1>
+    <p>We couldn't search for that because search doesn't work yet.<p>
+  </div>
 </head>
+  <body id="mainbody">
 <div style="align-items: center; text-align: center; font-family: sans-serif;">
 <h2 style="font-family: 'Langar', cursive;color:blue; text-align: center;">project storytime</h2>
 <p style="color: black; font-family: sans-serif;">stories are for the world. the world is for <em>everyone</em>.</p>
@@ -54,6 +59,16 @@ var userok = "false"
 				}
 			}, 1000)
 		});
+		const parameters = new URLSearchParams(window.location.search)
+    var searchterm = parameters.replace("s=","")
+    parameters == "" ? var search = true : var search = false
+    if (search) {
+      document.getElementById("searchterm").hidden = false
+    } else {
+      document.getElementById("searchterm").hidden = true
+    }
 	</script>
+  </body>
 </html>
+
 
