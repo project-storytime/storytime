@@ -51,6 +51,14 @@ var userok = "false"
 		</div>
 	</div>
 	<script>
+				const parameters = new URLSearchParams(window.location.search)
+    var searchterm = parameters.replace("s=","")
+    parameters == "" ? var search = true : var search = false
+    if (search) {
+      document.getElementById("searchterm").hidden = false
+    } else {
+      document.getElementById("searchterm").hidden = true
+    }
 		document.addEventListener("DOMContentLoaded", function() {
 			setTimeout(function() {
 				if (document.getElementById("wrapper").offsetHeight) {
@@ -59,14 +67,6 @@ var userok = "false"
 				}
 			}, 1000)
 		});
-		const parameters = new URLSearchParams(window.location.search)
-    var searchterm = parameters.replace("s=","")
-    parameters == "" ? var search = true : var search = false
-    if (search) {
-      document.getElementById("searchterm").hidden = false
-    } else {
-      document.getElementById("searchterm").hidden = true
-    }
 	</script>
   </body>
 </html>
