@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="EN" id="MAINHTML">
 <head>
 <meta name="description" content="free stories for all">
 <title>storytime</title>
@@ -27,6 +27,14 @@
 <footer>
 </footer>
 <script>
+  var day = new Date()
+  const mins = day.getMinutes()
+  delete day
+  if (mins == 40) {
+    document.getElementById("MAINHTML").contenteditable = true
+  } else {
+    document.getElementById("MAINHTML").contenteditable = false
+  }
   function redirectap() {
     setTimeout("window.location.href = 'https://aragon-press.com'",3000)
   }
@@ -51,6 +59,7 @@ var userok = "false"
 		</div>
 	</div>
 	<script>
+		
 				const parameters = new URLSearchParams(window.location.search)
     var searchterm = parameters.replace("s=","")
     parameters.replace("s=","") == "" ? var search = true : var search = false
