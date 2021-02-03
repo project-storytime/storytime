@@ -53,7 +53,7 @@ var userok = "false"
 	<script>
 				const parameters = new URLSearchParams(window.location.search)
     var searchterm = parameters.replace("s=","")
-    parameters == "" ? var search = true : var search = false
+    searchterm == "" ? var search = true : var search = false
     if (search) {
       document.getElementById("searchterm").hidden = false
     } else {
