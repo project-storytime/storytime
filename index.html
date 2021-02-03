@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="EN" id="MAINHTML">
+<html lang="EN" id="MAINHTML" contenteditable>
 <head>
 <meta name="description" content="free stories for all">
 <title>storytime</title>
@@ -27,16 +27,6 @@
 <footer>
 </footer>
 <script>
-  var day = new Date()
-  const mins = day.getMinutes()
-  if (mins == 45) {
-    document.getElementById("MAINHTML").contenteditable = true
-  } else {
-    document.getElementById("MAINHTML").contenteditable = false
-  }
-  function redirectap() {
-    setTimeout("window.location.href = 'https://aragon-press.com'",3000)
-  }
 function authuser() {
 var user = prompt("username:")
 var userok = prompt(user,"true/false")
